@@ -22,9 +22,9 @@ export const createUserService = async (
       id: user.id,
       email: user.email,
       role: user.role,
-      createdAt: user.createdAt,
-      updatedAt: user.updatedAt,
-      deletedAt: user.deletedAt,
+      createdAt: user.created_at,
+      updatedAt: user.updated_at,
+      deletedAt: user.deleted_at,
     };
     //
   } catch (error) {
