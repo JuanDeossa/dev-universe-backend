@@ -11,7 +11,7 @@
     "start:dev": "ts-node-dev --inspect=0.0.0.0:9229 --respawn --transpile-only src/app.ts",
     "start:docker": "ts-node-dev --inspect=0.0.0.0:9229 --respawn --transpile-only --poll src/app.ts",
     "build": "tsc",
-    "prestart": "npm run build",
+    "prestart": "npm run build && prisma migrate deploy",
     "start": "node dist/app.js"
   },
   "keywords": [],
