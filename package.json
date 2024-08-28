@@ -12,7 +12,7 @@
     "start:docker": "ts-node-dev --inspect=0.0.0.0:9229 --respawn --transpile-only --poll src/app.ts",
     "build": "tsc",
     "prestart": "npm run build && npx prisma migrate deploy && npx prisma db seed",
-    "start": "node dist/app.js"
+    "start": "node dist/src/app.js"
   },
   "keywords": [],
   "author": "",
